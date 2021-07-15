@@ -11,7 +11,7 @@ toggleSidebarMultiItem.forEach( li => {
     e.preventDefault()
     currentActive = document.querySelector( ".sidebar__menu--listItens.active" )
 
-    if ( currentActive ) 
+    if ( currentActive && currentActive !== li ) 
       currentActive.classList.toggle( "active" )
     
     li.classList.toggle( "active" )
